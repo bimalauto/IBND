@@ -2,21 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login | IBND</title>
+  <title>Redirecting to IBND App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Auto redirect after 3 seconds -->
+  <meta http-equiv="refresh" content="3; URL=https://script.google.com/macros/s/AKfycbzv7JHj5Gz90cqeQzkcAYyxofkgfwuj5SFuw0phalE78dG5JLq6q1liHUjS4nUM5QiJ/exec" />
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbzv7JHj5Gz90cqeQzkcAYyxofkgfwuj5SFuw0phalE78dG5JLq6q1liHUjS4nUM5QiJ/exec"
-        width="100%"
-        allowfullscreen="true"
-        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
-  <h1>Redirecting to the app...</h1>
+  <h2>Redirecting to IBND App...</h2>
+  <p>Please wait, or <a href="https://script.google.com/macros/s/AKfycbzv7JHj5Gz90cqeQzkcAYyxofkgfwuj5SFuw0phalE78dG5JLq6q1liHUjS4nUM5QiJ/exec">click here</a> if you are not redirected.</p>
+
   <script>
-            window.onload = function() {
-            document.querySelector('iframe').requestFullscreen().catch((err) => {
-                console.error('Error attempting to enable full-screen mode:', err.message);
-            });
-            };
-        </script>
-    </body>
-    </html>
+    // Backup JS redirect after 3 seconds
+    setTimeout(() => {
+      window.location.href = "https://script.google.com/macros/s/AKfycbzv7JHj5Gz90cqeQzkcAYyxofkgfwuj5SFuw0phalE78dG5JLq6q1liHUjS4nUM5QiJ/exec";
+    }, 3000);
+  </script>
+</body>
+</html>
